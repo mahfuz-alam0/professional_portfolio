@@ -7,6 +7,9 @@ import my_img from '../../img/my_image.png';
 import facebook from '../../img/Facebook.png';
 
 const Intro = () => {
+
+    const blank = '_blank'
+
     return (
         <div className='container intro_container'>
             <div className="Intro" id="Intro">
@@ -33,18 +36,24 @@ const Intro = () => {
                             left: "-12rem",
                         }}
                     ></div>
-                    
+
                     {/* social icons */}
                     <div className="social_icons">
-                        <img src={Github} alt="" />
-                        <img src={LinkedIn} alt="" />
-                        <img src={facebook} alt="" />
+                        <a href="https://github.com/mahfuz-alam0" target={blank}>
+                            <img src={Github} alt="" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/hasibul-mahfuz/" target={blank}>
+                            <img src={LinkedIn} alt="" />
+                        </a>
+                        <a href="https://www.facebook.com/hasibul.mahfuz" target={blank}>
+                            <img src={facebook} alt="" />
+                        </a>
                     </div>
                 </div>
 
                 <div className="i-right">
                     <div className="my_img">
-                        <img className='image' src={my_img} alt= ''/>
+                        <img className='image' src={my_img} alt='' />
                     </div>
                     <div className="blur" style={{ background: "rgb(153 229 193)" }}></div>
                     <div

@@ -72,8 +72,6 @@
     width: 27rem;
     height: 14rem;
     border-radius: 50%;
-    background: #edd0ff;
-    filter: blur(212px);
     z-index: -9;
     top: -18%;
     left: 0%;
@@ -95,6 +93,10 @@
         left: -3rem;
     }
 
+    .my_img{
+        width: 100%;
+    }
+
     .i-right .blur {
         display: none;
     }
@@ -103,5 +105,11 @@
         /* display: none; */
         top: -7rem !important;
         ;
+    }
+    .i-name> :nth-child(3){
+        width: 100%;
+    }
+    .blur{
+        display: none;
     }
 }

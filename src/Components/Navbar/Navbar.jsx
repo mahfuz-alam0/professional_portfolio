@@ -3,6 +3,9 @@ import { Link } from 'react-scroll';
 import './Navbar.css';
 
 const Navbar = () => {
+
+    const blank = "_blank"
+
     return (
         <div>
             <div className='container navbar'>
@@ -36,7 +39,9 @@ const Navbar = () => {
                                 Contect
                             </Link>
                         </li>
-                        <button className='btn hover'>Download CV</button>
+                        <a href="https://drive.google.com/file/d/19W73wp2DMSEUjRZzyzVb_IkGm_R8uP-o/view?usp=share_link" target={blank}>
+                            <button className='btn hover'>Download CV</button>
+                        </a>
                     </ul>
                 </div>
             </div>
