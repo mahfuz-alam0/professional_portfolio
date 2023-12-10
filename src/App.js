@@ -1,21 +1,25 @@
-import './App.css';
-import Contect from './Components/Contect/Contect';
-import Footer from './Components/Footer/Footer';
-import Intro from './Components/Intro/Intro';
-import Navbar from './Components/Navbar/Navbar';
-import Portfolio from './Components/Portfolio/Portfolio';
-import Services from './Components/Services/Services';
-
+import Navbar from "./components/Navbar/Navbar";
+import Intro from "./components/Intro/Intro";
+import Services from "./components/Services/Services";
+import "./App.css";
+import Experience from "./components/Experience/Experience";
+import Works from "./components/Works/Works";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Testimonial from "./components/Testimonials/Testimonial";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 function App() {
+
     return (
-        <div>
-            <div className="App container">
-                <Navbar />
-                <Intro />
-                <Services />
-                <Portfolio />
-                <Contect />
-            </div>
+        <div className="App">
+            <Navbar />
+            <Intro />
+            <Services />
+            <Experience />
+            <Works />
+            <Portfolio />
+            {/* <Testimonial /> */}
+            <Contact />
             <Footer />
         </div>
     );
